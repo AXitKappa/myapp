@@ -113,7 +113,7 @@ function showScore(){
 
 
 function handleNextButton(){
-    currentQuestionIndex;
+    currentQuestionIndex++;
     if(currentQuestionIndex < questions.length){
         showQuestion();
     }else{
@@ -122,12 +122,15 @@ function handleNextButton(){
 }
 
 
-nextButton.addEventListener("click", ()=>{
-    if(currentQuestionIndex < questions.length){
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
         handleNextButton();
-    }else{
+    } else {
         startQuiz();
     }
 });
+
+// Add this event listener for the "Play Again" button
+nextButton.addEventListener("click", startQuiz);
 
 startQuiz();
