@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 60px;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +21,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #91b659;
+    background-color: #03470d;
 }
 
 .stack-area{
@@ -45,14 +54,15 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     line-height: 88px;
+    color: wheat;
 }
 
 .sub-h1{
     width: 420px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 30px;
-
+    color: wheat;
 }
 
 button {
@@ -64,7 +74,7 @@ button {
     background: transparent;
     color: #000;
     text-transform: uppercase;
-    border: 3px solid #2cc00b;
+    border: 3px solid #bbdcb4;
     cursor: pointer;
     transition: all 0.7s;
     overflow: hidden;
@@ -187,7 +197,7 @@ button:hover .fourth {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     font-weight: 700;
-
+    color: #0bef12;
 }
 
 .content{
@@ -225,7 +235,7 @@ nav {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    background-color: green;
+    background-color: rgb(24, 220, 21);
 }
 
 .Menu{
@@ -319,7 +329,7 @@ ul li a:hover{
 .Card{
     width: 100%;
     height: 100vh;
-    background-color: #dbefd3;
+    background-color: #97ed8d;
     color: yellowgreen;
     display: flex;
     position: sticky;
@@ -376,6 +386,7 @@ ul li a:hover{
     margin-top: 30px;
     justify-content: space-between;
     color: white;
+    background-color: #03470d;
 }
 
 .Landing-button button:hover {
@@ -407,7 +418,7 @@ ul li a:hover{
 }
 
 .contact-inputs:focus{
-    border: 2px solid #2cc00b;  
+    border: 2px solid #2cc00b;
 }
 
 .contact-inputs::placeholder{
@@ -531,12 +542,17 @@ ul li a:hover{
 }
 
 .description p {
-    color: #b0b0ba;
+    color: red;
     padding-top: 5px;
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 10px;
 }
 
 .description h4{
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 input{
@@ -565,7 +581,7 @@ input:checked + label .description{
 }
 
 .quadrat[for="c4"] {
-    background-image: url('Spiegel.svg');
+    background-image: url('Platte.svg');
 }
 
 .logo-carousel{
@@ -576,7 +592,7 @@ input:checked + label .description{
 
 @keyframes slide{
     0%   {
-         transform: translateX(0);
+        transform: translateX(0);
     }
 
     100% {
@@ -715,6 +731,231 @@ footer{
     transform: rotate(135deg);
     margin-bottom: -14px;
     pointer-events: none;
+}
+
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#Tips {
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.Spielblätter {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+.card_image {
+    position: relative;
+    max-height: 250px;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_price {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 0.25rem;
+    background-color: #c89b3f;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card_price span {
+    font-size: 12px;
+    margin-top: -2px;
+}
+
+.note {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    border-radius: 0.25rem;
+    background-color: #c89b3f;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+    }
+}
+
+.Spielblatt {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    position: relative;
+    padding: 16px 12px 32px 24px;
+    margin: 16px 8px 8px 0;
+    max-height: 290px;
+    overflow-y: scroll;
+}
+
+.card_content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.card_content::-webkit-scrollbar-track {
+    box-shadow: 0;
+    border-radius: 0;
+}
+
+.card_content::-webkit-scrollbar-thumb {
+    background: #c89b3f;
+    border-radius: 15px;
+}
+
+.card_title {
+    position: relative;
+    margin: 0 0 24px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card_title::after {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c89b3f;
+    content: "";
+}
+
+hr {
+    margin: 24px auto;
+    width: 50px;
+    border-top: 2px solid #c89b3f;
+}
+
+.card_text p {
+    margin: 0 0 24px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card_text p:last-child {
+    margin: 0;
+}
+
+#Infos, #Infos2{
+    align-items: center;
+    flex-direction: column;
+}
+
+#Infos p, #Infos2 p{
+    width: 100%;
+    font-size: 8px; /* Ändere die Schriftgröße nach Bedarf */
+    line-height: 1.6; /* Ändere den Zeilenabstand nach Bedarf */
+    color: #333; /* Ändere die Schriftfarbe nach Bedarf */
+    margin-bottom: 15px; /* Ändere den Abstand unterhalb des Absatzes nach Bedarf */
+}
+
+h9{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    flex-basis: 50%;
+    width: 100%;
+    font-size: 84px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    line-height: 88px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s infinite, cursor .4s step-end infinite alternate;
+    color: #208207;
+
+}
+
+h10{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    flex-basis: 50%;
+    width: 100%;
+    font-size: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    line-height: 88px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s infinite, cursor .4s step-end infinite alternate;
+    color: #208207;
+}
+
+
+@keyframes cursor{
+    50%{ border-color: transparent;}
+}
+
+@keyframes typing{
+    from { width: 0}
+}
+
+p3{
+    width: 80%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin-bottom: auto;
+    font-weight: bold;
+    color: #004702;
+
 }
 
 
