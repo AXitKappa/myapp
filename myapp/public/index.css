@@ -758,6 +758,10 @@ footer{
     align-items: center;
 }
 
+#LogoGreenSpark{
+    color: white;
+}
+
 .cards_item {
     display: flex;
     padding: 1rem;
