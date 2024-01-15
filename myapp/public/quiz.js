@@ -1,47 +1,38 @@
 const questions = [
     {
-        question: "Text für die Frage?",
+        question: "Wie viele Smartphones werden jährlich hergestellet?",
         answers: [
-            {"text":"Antwort 1", correct:false},
-            {"text":"Antwort 2", correct:true},
-            {"text":"Antwort 3", correct:false},
-            {"text":"Antwort 4", correct:false},
+            {"text":"1.37 Millarden", correct:false},
+            {"text":"1.21 Millarden", correct:true},
+            {"text":"1.45 Millarden", correct:false},
+            {"text":"1.98 Millarden", correct:false},
         ]
     },
     {
-        question: "Text für die Frage2?",
+        question: "Welcher Faktor ist entscheidend für die Umweltfreundlichkeit von Elektronikgeräten?",
         answers:[
-            {"text":"Antwort 1", correct:true},
-            {"text":"Antwort 2", correct:false},
-            {"text":"Antwort 3", correct:false},
-            {"text":"Antwort 4", correct:false},
+            {"text":"Höchtmögliche Verpackungsdichte", correct:false},
+            {"text":"Geplante Obsolenz", correct:false},
+            {"text":"Niedriger Energieverbrauch", correct:true},
+            {"text":"Verwendung nicht recyclebarer Materialien", correct:false},
         ]
     },
     {
-        question: "Text für die Frage3?",
+        question: "Wie können Unternehmen dazu beitragen, den CO2-Fußabruck ihrer IT-Infrakstruktur zu minimieren?",
         answers:[
-            {"text":"Antwort 1", correct:false},
-            {"text":"Antwort 2", correct:false},
-            {"text":"Antwort 3", correct:true},
-            {"text":"Antwort 4", correct:false},
+            {"text":"Einsatz von energieeffizienten Geräten", correct:true},
+            {"text":"Verzicht auf Recyclingprogramme", correct:false},
+            {"text":"Verwendung von Einwegplastikverpackungen", correct:false},
+            {"text":"Intensivierung von Papierdokumenten", correct:false},
         ]
     },
     {
-        question: "Text für die Frage4?",
+        question: "Welche Rolle spielt die Cloud-Computing-Technologie bei der Förderung von GreenIT?",
         answers:[
-            {"text":"Antwort 1", correct:false},
-            {"text":"Antwort 2", correct:true},
-            {"text":"Antwort 3", correct:false},
-            {"text":"Antwort 4", correct:false},
-        ]
-    },
-    {
-        question: "Text für die Frage5?",
-        answers:[
-            {"text":"Antwort 1", correct:false},
-            {"text":"Antwort 2", correct:false},
-            {"text":"Antwort 3", correct:false},
-            {"text":"Antwort 4", correct:true},
+            {"text":"Sie trägt zur Energieeffizienz bei", correct:true},
+            {"text":"Sie erhöht den Bedarf an physischen Servern", correct:false},
+            {"text":"Sie fördert den Einsatz von Einwegspeichermedien", correct:false},
+            {"text":"Sie führt zu einer Verringerung der Recylingmöglichkeiten", correct:false},
         ]
     }
 ];
